@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditTodoFragment"
+    android:background="@drawable/bg">
+
+    <EditText
+        android:id="@+id/edit_fragment_txt_name"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/edit_title"
+        android:inputType="textPersonName"
+        android:textColor="@color/tour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385" />
+
+
+    <EditText
+        android:id="@+id/edit_fragment_txt_description"
+        android:layout_width="353dp"
+        android:layout_height="108dp"
+        android:height="150dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/edit_description"
+        android:inputType="textMultiLine|textPersonName"
+        android:lines="5"
+        android:maxLines="5"
+        android:scrollbars="vertical"
+        android:textColor="@color/tour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.762" />
+
+    <EditText
+        android:id="@+id/edit_fragment_txt_date"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/edit_date"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:textColor="@color/tour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <CheckBox
+        android:id="@+id/edit_fragment_chk_complete"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:text="@string/completed"
+        android:textColor="@color/tour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256" />
+
+
+    <Button
+        android:id="@+id/edit_fragment_btn_cancel"
+        android:layout_width="178dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:text="@string/cancel"
+        android:textColor="@color/tour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.581" />
+
+    <Button
+        android:id="@+id/edit_fragment_btn_save"
+        android:layout_width="178dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:text="@string/edit_save"
+        android:textColor="@color/tour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tag"
+        android:textColor="@color/tour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        android:textColor="@color/tour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.311" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="@color/tour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="33dp"
+        android:layout_height="18dp"
+        android:text="@string/date"
+        android:textColor="@color/tour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:textColor="@color/tour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816" />
+
+    <RadioGroup
+        android:id="@+id/edit_fragment_rg_priority"
+        android:layout_width="353dp"
+        android:layout_height="59dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/edit_fragment_chk_complete"
+        app:layout_constraintStart_toStartOf="@+id/edit_fragment_chk_complete"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/edit_fragment_rb_high"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/color_high"
+            android:text="@string/edit_high" />
+
+        <RadioButton
+            android:id="@+id/edit_fragment_rb_medium"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/color_medium"
+            android:text="@string/edit_medium" />
+
+        <RadioButton
+            android:id="@+id/edit_fragment_rb_low"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/color_low"
+            android:text="@string/edit_low" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+package com.example.todoapp_final.viewModel;
+
+import android.app.Application;
+
+import androidx.annotation.NonNull;
+import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.LiveData;
+
+import com.example.todoapp_final.data.TodoRepository;
+import com.example.todoapp_final.model.ETodo;
+
+import java.util.List;
+
+public class TodoViewModel extends AndroidViewModel {
+    private TodoRepository mTodoRepository;
+    private LiveData<List<ETodo>> allTodos;
+    public TodoViewModel(@NonNull Application application){
+        super(application);
+        mTodoRepository=new TodoRepository(application);
+        allTodos = mTodoRepository.getAllTodoList();
+    }
+
+    public LiveData<List<ETodo>> getAllTodos() {
+        return allTodos;
+    }
+
+   public void insert(ETodo todo) {
+        mTodoRepository.insert(todo);
+    }
+
+    public  void deleteById(ETodo todo){
+        mTodoRepository.delete(todo);
+    }
+
+    public ETodo getTodoById(int id) {
+        return mTodoRepository.getTodoById(id);
+    }
+
+    public void update(ETodo eTodo){
+        mTodoRepository.update(eTodo);
+    }
+
+}

@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bgColorFab">#F44336</color>
+    <color name="color_high">#FF0000</color>
+    <color name="color_medium">#F4D03F</color>
+    <color name="color_low">#00FF00</color>
+    <color name="red">#f57b42</color>
+    <color name="green">#52BE80</color>
+    <color name="grey">#253a4b</color>
+    <color name="tour">#89CFF0</color>
+
 </resources>
