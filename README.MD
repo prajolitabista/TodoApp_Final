@@ -51,10 +51,13 @@ The following assignment covers a Todo android application that can be used in o
 - Sign up with validation
 - Login with validation and email verification
 - Profile 
+<br>
 <img src = "https://github.com/prajolitabista/TodoApp_Final/blob/assignment/img/output.gif" width="200" height="360">
 
 <h3>Output Part 2</h3>
+
 - CRUD Functionality
 - Logout
+<br>
   <img src = "https://github.com/prajolitabista/TodoApp_Final/blob/assignment/img/output2.gif" width="200" height="360">
 
