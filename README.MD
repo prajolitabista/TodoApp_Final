@@ -47,10 +47,11 @@ The following assignment covers a Todo android application that can be used in o
 
 ## GIF Output
 <h3>Output Part 1</h3>
+
 - Splash Screen
 - Sign up with validation
 - Login with validation and email verification
-- Profile 
+- Profile
 <br>
 <img src = "https://github.com/prajolitabista/TodoApp_Final/blob/assignment/img/output.gif" width="200" height="360">
 
