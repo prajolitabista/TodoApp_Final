@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".EditTodoFragment"
-    android:background="@drawable/bg">
+    android:background="@color/bg">
 
     <EditText
         android:id="@+id/edit_fragment_txt_name"
@@ -60,13 +60,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
     <CheckBox
         android:id="@+id/edit_fragment_chk_complete"
         android:layout_width="355dp"
         android:layout_height="wrap_content"
         android:text="@string/completed"
         android:textColor="@color/tour"
+        android:textColorHighlight="#FF253A4B"
+        android:textColorLink="#FF253A4B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -184,7 +185,9 @@
             android:layout_height="45dp"
             android:layout_weight="1"
             android:background="@color/color_high"
-            android:text="@string/edit_high" />
+            android:text="@string/edit_high"
+            android:textColorHighlight="#FF253A4B"
+            android:textColorLink="#FF253A4B" />
 
         <RadioButton
             android:id="@+id/edit_fragment_rb_medium"
@@ -192,7 +195,9 @@
             android:layout_height="45dp"
             android:layout_weight="1"
             android:background="@color/color_medium"
-            android:text="@string/edit_medium" />
+            android:text="@string/edit_medium"
+            android:textColorHighlight="#FF253A4B"
+            android:textColorLink="#FF253A4B" />
 
         <RadioButton
             android:id="@+id/edit_fragment_rb_low"
@@ -200,7 +205,9 @@
             android:layout_height="45dp"
             android:layout_weight="1"
             android:background="@color/color_low"
-            android:text="@string/edit_low" />
+            android:text="@string/edit_low"
+            android:textColorHighlight="#FF253A4B"
+            android:textColorLink="#FF253A4B" />
     </RadioGroup>
 
 

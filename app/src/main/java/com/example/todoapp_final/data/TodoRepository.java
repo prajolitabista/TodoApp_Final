@@ -52,8 +52,6 @@ public class TodoRepository {
         new updateTodoAysncTask(mTodoDAO).execute(eTodo);
     }
 
-
-
     private static class insertTodoAysncTask extends AsyncTask<ETodo, Void, Void>{
         private TodoDAO mTodoDao;
         private insertTodoAysncTask(TodoDAO todoDAO){
@@ -92,4 +90,5 @@ public class TodoRepository {
             return null;
         }
     }
+
 }

@@ -7,7 +7,7 @@
     tools:context=".LoginActivity"
     tools:layout_editor_absoluteX="20dp"
     tools:layout_editor_absoluteY="100dp"
-    android:background="@drawable/bg">
+    android:background="@color/bg">
 
 
     <TextView
@@ -17,7 +17,7 @@
         android:text="@string/login"
         android:textAlignment="center"
         android:textColor="@color/tour"
-        android:textSize="@dimen/heading_text_sixe"
+        android:textSize="@dimen/heading_text_size"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,6 +48,8 @@
         android:ems="10"
         android:inputType="textPassword"
         android:textColor="@color/tour"
+        android:textColorHighlight="#FF253A4B"
+        android:textColorLink="#FF253A4B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.929"
@@ -90,6 +92,8 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         android:textColor="@color/tour"
+        android:textColorHighlight="#FF253A4B"
+        android:textColorLink="#FF253A4B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.929"

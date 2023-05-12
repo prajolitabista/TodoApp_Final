@@ -14,6 +14,7 @@
     <color name="red">#f57b42</color>
     <color name="green">#52BE80</color>
     <color name="grey">#253a4b</color>
-    <color name="tour">#89CFF0</color>
-
+    <color name="tour">#FFFFFF</color>
+    <color name="bg">#71BEF4</color>
+    <color name="heading">#FF253A4B</color>
 </resources>

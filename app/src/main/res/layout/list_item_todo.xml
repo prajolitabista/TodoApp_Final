@@ -20,7 +20,7 @@
             android:id="@+id/list_item_tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/heading_text_sixe"
+            android:textSize="@dimen/heading_text_size"
             android:text="TextView" />
         <TextView
             android:id="@+id/list_item_tv_date"
@@ -64,7 +64,7 @@
             android:id="@+id/list_item_tv_titles"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/heading_text_sixe"
+            android:textSize="@dimen/heading_text_size"
             android:visibility="gone"
             android:text="!" />
 

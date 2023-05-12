@@ -70,7 +70,18 @@ public class    EditTodoFragment extends Fragment {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SaveTodo();
+                if (txtTitle.getText().toString().equals("")){
+                    txtTitle.requestFocus();
+                    txtTitle.setError("Name is required");
+                }if (txtDescription.getText().toString().equals("")){
+                    txtDescription.requestFocus();
+                    txtDescription.setError("Description is required");
+                }if (txtDate.getText().toString().equals("")){
+                    txtDate.requestFocus();
+                    txtDate.setError("Date Required");
+                }else{
+                    SaveTodo();
+                }
             }
         });
 
@@ -151,6 +162,7 @@ public class    EditTodoFragment extends Fragment {
                     rgPriority.check(R.id.edit_fragment_rb_low);
                     break;
             }
+            //chComplete.setVisibility(View.VISIBLE);
             chComplete.setChecked(todo.isCompleted());
         }
     }

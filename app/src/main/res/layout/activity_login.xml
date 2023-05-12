@@ -7,7 +7,7 @@
     tools:context=".LoginActivity"
     tools:layout_editor_absoluteX="20dp"
     tools:layout_editor_absoluteY="100dp"
-    android:background="@drawable/bg">
+    android:background="@color/bg">
 
     <Button
         android:id="@+id/login_activity_btn_login"
@@ -27,17 +27,19 @@
         android:layout_width="365dp"
         android:layout_height="50dp"
         android:layout_marginVertical="@dimen/default_margin"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="Minimum 6 Characters"
         android:inputType="textPassword"
         android:textColor="@color/tour"
+        android:textColorHighlight="#FF253A4B"
+        android:textColorLink="#FF253A4B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.648"
-        android:autofillHints=""
-        android:hint="Minimum 6 Characters"/>
+        app:layout_constraintVertical_bias="0.648" />
 
 
     <TextView
@@ -71,17 +73,19 @@
         android:layout_width="365dp"
         android:layout_height="50dp"
         android:layout_marginVertical="@dimen/default_margin"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/email_email_com"
         android:inputType="textEmailAddress"
         android:textColor="@color/tour"
+        android:textColorHighlight="#FF253A4B"
+        android:textColorLink="#FF253A4B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.533"
-        android:autofillHints=""
-        android:hint="@string/email_email_com"/>
+        app:layout_constraintVertical_bias="0.533" />
 
     <TextView
         android:id="@+id/email_label"

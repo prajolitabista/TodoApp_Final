@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegisterActivity"
-    android:background="@drawable/bg">
+    android:background="@color/bg">
 
 
     <TextView
@@ -138,6 +138,7 @@
         android:layout_height="60dp"
         android:text="@string/sign_up"
         android:textColor="@color/tour"
+        app:backgroundTint="#253A4B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -152,7 +153,7 @@
         android:layout_marginTop="136dp"
         android:text="@string/new_user"
         android:textAlignment="center"
-        android:textColor="@color/tour"
+        android:textColor="@color/heading"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
