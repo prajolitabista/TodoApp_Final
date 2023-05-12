@@ -31,7 +31,7 @@ The following assignment covers a Todo android application that can be used in o
 - Click on button C to mark task complete.
 - Click on logout in the menu option or profile to log out of the todo app.
 
-<h3>Splash Screen</h3><img src = "../img/splash.png" width="200" height="360">
+<h3>Splash Screen</h3><img src = "C:/Users/Prajolita Bista/AndroidStudioProjects/TodoApp_Final/img/splash.png" width="200" height="360">
 <h3>Sign Up</h3><img src = "../img/signup.png" width="200" height="360">
 <h3>Sign Up Validation</h3><img src = "../img/signup.png" width="200" height="360">
 <h3>Login In</h3><img src = <img src = "../img/login.png" width="200" height="360">
