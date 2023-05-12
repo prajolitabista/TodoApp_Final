@@ -1,4 +1,3 @@
-[//]: # (![git]&#40;img/&#41;)
 
 # TODO APP
 The following assignment covers a Todo android application that can be used in our daily life to perform our tasks.  
@@ -37,7 +36,7 @@ The following assignment covers a Todo android application that can be used in o
 <h3>Login In</h3><img src = <img src = "../img/login.png" width="200" height="360">
 <h3>Login In Validation</h3><img src = <img src = "../img/loginVal.png" width="200" height="360">
 <h3>Log Out</h3><img src = "../img/logout.png" width="200" height="360">
-<h3>New Add Task</h3><img src = "../img/list.png" width="200" height="360">
+<h3>New Add Task</h3><img src = "C:\Users\Prajolita Bista\AndroidStudioProjects\TodoApp_Final\img\add.png" width="200" height="360">
 <h3>Task</h3> <img src = "../img/add.png" width="200" height="360">
 <h3>Update Task</h3><img src = <img src = "../img/update.png" width="200" height="360">
 <h3>Completed Task</h3><img src = "../img/complete.png" width="200" height="360">
