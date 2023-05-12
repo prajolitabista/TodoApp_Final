@@ -24,7 +24,7 @@ import com.example.todoapp_final.users.users;
 
 public class Profile extends AppCompatActivity {
 
-    private FirebaseUser user;
+    private FirebaseUser users;
     private DatabaseReference reference;
     private String userID;
     private Button list , logout;
@@ -32,11 +32,6 @@ public class Profile extends AppCompatActivity {
     FragmentManager fragmentManager;
     Fragment fragment;
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
-        return true;
-    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,10 +44,10 @@ public class Profile extends AppCompatActivity {
 
         setContentView(R.layout.activity_profile);
 
-        user= FirebaseAuth.getInstance().getCurrentUser();
-        reference= FirebaseDatabase.getInstance().getReference("Users");
+        users= FirebaseAuth.getInstance().getCurrentUser();
+        reference= FirebaseDatabase.getInstance().getReference("users");
 
-        userID = user.getUid();
+        userID = users.getUid();
         final TextView FullName = (TextView) findViewById(R.id.name_profile);
         final TextView phone = (TextView) findViewById(R.id.phone_profile);
         final TextView email = (TextView) findViewById(R.id.email_profile);
@@ -95,14 +90,9 @@ public class Profile extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
-                Toast.makeText(Profile.this, "Email has been sent to you verify it to continue ! ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Profile.this, "User Logged Out ", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(Profile.this,LoginActivity.class));
             }
         });
-
-
-
-
-
     }
 }
